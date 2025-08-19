@@ -1,3 +1,0 @@
-[console_scripts]
-leader = robo_leader.robo_leader:main
-

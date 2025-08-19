@@ -1,4 +1,0 @@
-
-# Response
-uint8[] servo_id
-float64[] servo_data

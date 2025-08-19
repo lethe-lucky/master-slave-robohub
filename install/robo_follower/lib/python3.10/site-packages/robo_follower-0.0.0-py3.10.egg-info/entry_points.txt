@@ -1,3 +1,0 @@
-[console_scripts]
-follower = robo_follower.robo_follower:main
-
