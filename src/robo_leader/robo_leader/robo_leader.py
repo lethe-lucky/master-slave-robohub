@@ -14,28 +14,45 @@ import fashionstar_uart_sdk as uservo
 import serial
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
+import os
+import sys
+import argparse
+from robo_config.config_loader import RobotConfig
 
-# 常量定义 / Constants
-LEADER_NODE = 'leader_node'  # 节点名称 / Node name
-LEADER_ARM_ANGLE_TOPIC = "leader_arm_angle_topic"  # 当前关节角度话题 / Current joint states topic
-SERVO_PORT_NAME = "/dev/ttyUSB0"  # 舵机串口号 <<< 修改为实际串口号
-                                # Servo serial port <<< modify to actual port name
-SERVO_BAUDRATE = 1000000  # 舵机的波特率 / Servo communication baud rate
-
+# 默认配置 / Default configuration
+from ament_index_python.packages import get_package_share_directory
+DEFAULT_CONFIG_FILE = os.path.join(get_package_share_directory('robo_config'), 'config', 'robot_config.yaml')
+# from ament_index_python.packages import get_package_share_directory
+DEFAULT_CONFIG_FILE = os.path.join(get_package_share_directory('robo_config'), 'config', 'robot_config.yaml')
+DEFAULT_GROUP = 'group1'
 
 class LeaderArm(Node):
 
-    def __init__(self):
-        super().__init__('leader_node')
+    def __init__(self, config_file=DEFAULT_CONFIG_FILE, group_name=DEFAULT_GROUP):
+        # 加载配置
+        self.config = RobotConfig(config_file)
+        self.leader_config = self.config.get_leader_config(group_name)
+        
+        # 从配置中获取参数
+        node_name = self.leader_config.get('node_name', 'leader_node')
+        self.topic_name = self.leader_config.get('topic_name', 'leader_arm_angle_topic')
+        self.servo_port = self.leader_config.get('port', '/dev/ttyUSB0')
+        self.servo_baudrate = self.leader_config.get('baudrate', 1000000)
+        self.servo_ids = self.leader_config.get('servo_ids', [0, 1, 2, 3, 4, 5, 6])
+        
+        # 初始化节点
+        super().__init__(node_name)
+        
         # 发布舵机角度设定话题 / Publisher for SetAngle messages
         self.angle_publishers = self.create_publisher(
             SetAngle,                                               
-            LEADER_ARM_ANGLE_TOPIC,
+            self.topic_name,
             1)
-        self.servo_ids = [0,1,2,3,4,5,6]
+        
         # 初始化串口 / Initialize serial port
         try:
-            self.uart = serial.Serial(port=SERVO_PORT_NAME,baudrate=SERVO_BAUDRATE,parity=serial.PARITY_NONE,stopbits=1,bytesize=8,timeout=0)
+            self.uart = serial.Serial(port=self.servo_port, baudrate=self.servo_baudrate, 
+                                     parity=serial.PARITY_NONE, stopbits=1, bytesize=8, timeout=0)
         except serial.SerialException as e:
             self.get_logger().error(f"串口初始化失败: {e}")
             raise ValueError(f"串口初始化失败: {e}")  # Serial port init failed
@@ -48,13 +65,16 @@ class LeaderArm(Node):
         self.reset_multi_turn_angle(0xff)
         time.sleep(0.1)
         for i in range(6):
-            self.uservo.set_damping(i,power=300)
+            self.uservo.set_damping(i, power=300)
         
         # 创建定时器
-        timer_period = 0.005  # seconds
+        timer_period = self.config.get_update_rate()  # 从配置获取更新频率
         self.timer = self.create_timer(timer_period, self.fsrobo_a1_leader_angle_publish)
 
         self.get_logger().info(f"主控节点初始化完成 / Leader node initialization complete")
+        self.get_logger().info(f"使用串口: {self.servo_port}, 波特率: {self.servo_baudrate}")
+        self.get_logger().info(f"发布话题: {self.topic_name}")
+        self.get_logger().info(f"舵机ID: {self.servo_ids}")
 
     def reset_multi_turn_angle(self, servo_id):
         """重设指定舵机多圈圈数 / Reset multi-turn count for a single servo"""
@@ -87,6 +107,9 @@ class LeaderArm(Node):
         for i in range(len(self.servo_ids)):
             leader_msg.servo_id.append(self.servo_ids[i])
             current_angle = self.uservo.servos[i].angle_monitor
+            if current_angle is None:
+                self.get_logger().error(f"舵机 {self.servo_ids[i]} 角度读取失败！")
+                current_angle = 0.0  # 默认值
             leader_msg.target_angle.append(current_angle)
             leader_msg.time.append(100)
             angle_list.append(f"舵机{self.servo_ids[i]}:{current_angle}")
@@ -97,8 +120,23 @@ class LeaderArm(Node):
         self.angle_publishers.publish(leader_msg)
 
 def main(args=None):
+    # 解析命令行参数
+    parser = argparse.ArgumentParser(description='Leader Arm Node')
+    parser.add_argument('--config', type=str, default=DEFAULT_CONFIG_FILE,
+                        help='Configuration file path')
+    parser.add_argument('--group', type=str, default=DEFAULT_GROUP,
+                        help='Arm group name in configuration')
+    
+    # 解析ROS2参数
     rclpy.init(args=args)
-    leader_node = LeaderArm()
+    ros_args = rclpy.utilities.remove_ros_args(args=args)
+    parsed_args = parser.parse_args(ros_args[1:])
+    
+    try:
+        leader_node = LeaderArm(config_file=parsed_args.config, group_name=parsed_args.group)
+    except Exception as e:
+        print(f"初始化失败: {e}")
+        return
     
     # 使用多线程执行器 / Use multithreaded executor
     executor = MultiThreadedExecutor()

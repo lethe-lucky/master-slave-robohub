@@ -15,31 +15,45 @@ import serial
 import struct
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
+import os
+import sys
+import argparse
+from robo_config.config_loader import RobotConfig
 
-# 常量定义 / Constants
-FOLLOWER_NODE = 'follower_node'  # 节点名称 / Node name
-LEADER_ARM_ANGLE_TOPIC = "leader_arm_angle_topic"  # 接收主控节点角度话题 / Receive leader node angle topic
-SERVO_PORT_NAME = "/dev/ttyUSB1"  # 舵机串口号 <<< 修改为实际串口号
-                                # Servo serial port <<< modify to actual port name
-SERVO_BAUDRATE = 1000000  # 舵机的波特率 / Servo communication baud rate
-ID = 0  # 多手臂时区分话题ID / ID to distinguish multiple arms in topics
-
+# 默认配置 / Default configuration
+from ament_index_python.packages import get_package_share_directory
+DEFAULT_CONFIG_FILE = os.path.join(get_package_share_directory('robo_config'), 'config', 'robot_config.yaml')
+# from ament_index_python.packages import get_package_share_directory
+DEFAULT_CONFIG_FILE = os.path.join(get_package_share_directory('robo_config'), 'config', 'robot_config.yaml')
+DEFAULT_GROUP = 'group1'
 
 class FollowerArm(Node):
 
-    def __init__(self):
-        super().__init__(FOLLOWER_NODE)
+    def __init__(self, config_file=DEFAULT_CONFIG_FILE, group_name=DEFAULT_GROUP):
+        # 加载配置
+        self.config = RobotConfig(config_file)
+        self.follower_config = self.config.get_follower_config(group_name)
+        
+        # 从配置中获取参数
+        node_name = self.follower_config.get('node_name', 'follower_node')
+        self.topic_name = self.follower_config.get('topic_name', 'leader_arm_angle_topic')
+        self.servo_port = self.follower_config.get('port', '/dev/ttyUSB1')
+        self.servo_baudrate = self.follower_config.get('baudrate', 1000000)
+        self.servo_ids = self.follower_config.get('servo_ids', [0, 1, 2, 3, 4, 5, 6])
+        
+        # 初始化节点
+        super().__init__(node_name)
         
         # 初始化参数
-        self.servo_ids = [0, 1, 2, 3, 4, 5, 6]
-        self.SRV_NUM = 7
+        self.SRV_NUM = len(self.servo_ids)
         self.target_angle = [0 for _ in range(self.SRV_NUM)]
         self.interval = [1500 for _ in range(self.SRV_NUM)]
         self.current_angle = [0.0 for _ in range(self.SRV_NUM)]
         
-       # 初始化串口 / Initialize serial port
+        # 初始化串口 / Initialize serial port
         try:
-            self.uart = serial.Serial(port=SERVO_PORT_NAME,baudrate=SERVO_BAUDRATE,parity=serial.PARITY_NONE,stopbits=1,bytesize=8,timeout=0)
+            self.uart = serial.Serial(port=self.servo_port, baudrate=self.servo_baudrate, 
+                                     parity=serial.PARITY_NONE, stopbits=1, bytesize=8, timeout=0)
         except serial.SerialException as e:
             self.get_logger().error(f"串口初始化失败: {e}")
             raise ValueError(f"串口初始化失败: {e}")  # Serial port init failed
@@ -55,11 +69,14 @@ class FollowerArm(Node):
         # 订阅主控节点的角度设定话题 / Subscribe to leader node angle topic
         self.angle_subscription = self.create_subscription(
             SetAngle,
-            LEADER_ARM_ANGLE_TOPIC,
+            self.topic_name,
             self.set_angle_callback,
             10)
         
         self.get_logger().info(f"从控节点初始化完成 / Follower node initialization complete")
+        self.get_logger().info(f"使用串口: {self.servo_port}, 波特率: {self.servo_baudrate}")
+        self.get_logger().info(f"订阅话题: {self.topic_name}")
+        self.get_logger().info(f"舵机ID: {self.servo_ids}")
 
     def reset_multi_turn_angle(self, servo_id):
         """重设指定舵机多圈圈数 / Reset multi-turn count for a single servo"""
@@ -96,16 +113,29 @@ class FollowerArm(Node):
             size, command_data_list
         )
 
-    def node_close(self):
-        """节点关闭时的清理工作 / Cleanup when node is closed"""
-        pass
+    def destroy_node(self):
+        """安全释放资源"""
+        self.get_logger().info('正在关闭节点并释放资源...')
+        if hasattr(self, 'uart') and self.uart.is_open:
+            self.uart.close()
+        super().destroy_node()
 
 
 def main(args=None):
+    # 解析命令行参数
+    parser = argparse.ArgumentParser(description='Follower Arm Node')
+    parser.add_argument('--config', type=str, default=DEFAULT_CONFIG_FILE,
+                        help='Configuration file path')
+    parser.add_argument('--group', type=str, default=DEFAULT_GROUP,
+                        help='Arm group name in configuration')
+    
+    # 解析ROS2参数
     rclpy.init(args=args)
+    ros_args = rclpy.utilities.remove_ros_args(args=args)
+    parsed_args = parser.parse_args(ros_args[1:])
     
     try:
-        follower_node = FollowerArm()
+        follower_node = FollowerArm(config_file=parsed_args.config, group_name=parsed_args.group)
     except Exception as e:
         print(f"初始化失败: {e}")
         return
@@ -119,7 +149,6 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
-        follower_node.node_close()
         follower_node.destroy_node()
         rclpy.shutdown()
 
