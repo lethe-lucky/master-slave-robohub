@@ -1,0 +1,40 @@
+# 机械臂配置文件
+# Robot arm configuration file
+
+# 机械臂组配置
+# Robot arm group configuration
+arm_groups:
+  # 第一组机械臂
+  group1:
+    leader:
+      node_name: "leader_node_1"
+      topic_name: "leader_arm_angle_topic_1"
+      port: "/dev/ttyUSB0"
+      baudrate: 1000000
+      servo_ids: [0, 1, 2, 3, 4, 5, 6]
+    follower:
+      node_name: "follower_node_1"
+      topic_name: "leader_arm_angle_topic_1"  # 与leader相同，用于订阅
+      port: "/dev/ttyUSB1"
+      baudrate: 1000000
+      servo_ids: [0, 1, 2, 3, 4, 5, 6]
+  
+  # 第二组机械臂
+  group2:
+    leader:
+      node_name: "leader_node_2"
+      topic_name: "leader_arm_angle_topic_2"
+      port: "/dev/ttyUSB2"
+      baudrate: 1000000
+      servo_ids: [0, 1, 2, 3, 4, 5, 6]
+    follower:
+      node_name: "follower_node_2"
+      topic_name: "leader_arm_angle_topic_2"  # 与leader相同，用于订阅
+      port: "/dev/ttyUSB3"
+      baudrate: 1000000
+      servo_ids: [0, 1, 2, 3, 4, 5, 6]
+
+# 全局配置
+# Global configuration
+global:
+  update_rate: 0.005  # 更新频率(秒) / Update rate (seconds)
