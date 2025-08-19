@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_interfaces/srv/ReadData.srv
+// generated code does not contain a copyright notice
+
+
+module robo_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct ReadData_Request {
+      string command;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct ReadData_Response {
+      sequence<uint8> servo_id;
+
+      sequence<double> servo_data;
+    };
+  };
+};

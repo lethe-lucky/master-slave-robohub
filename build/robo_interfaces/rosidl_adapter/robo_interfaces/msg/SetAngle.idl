@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robo_interfaces/msg/SetAngle.msg
+// generated code does not contain a copyright notice
+
+
+module robo_interfaces {
+  module msg {
+    struct SetAngle {
+      sequence<uint8> servo_id;
+
+      sequence<double> target_angle;
+
+      sequence<int32> time;
+
+      sequence<int32> speed;
+    };
+  };
+};

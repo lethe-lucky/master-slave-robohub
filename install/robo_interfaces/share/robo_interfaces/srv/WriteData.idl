@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robo_interfaces/srv/WriteData.srv
+// generated code does not contain a copyright notice
+
+
+module robo_interfaces {
+  module srv {
+    struct WriteData_Request {
+      string command;
+
+      uint8 servo_id;
+
+      int32 value1;
+    };
+    struct WriteData_Response {
+      boolean result;
+    };
+  };
+};

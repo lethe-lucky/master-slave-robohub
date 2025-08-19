@@ -1,0 +1,8 @@
+{
+  "package_name": "robo_interfaces",
+  "non_idl_tuples": [
+    "/home/fsrobo/master-slave-robohub/src/robo_interfaces:srv/ReadData.srv",
+    "/home/fsrobo/master-slave-robohub/src/robo_interfaces:srv/WriteData.srv",
+    "/home/fsrobo/master-slave-robohub/src/robo_interfaces:msg/SetAngle.msg"
+  ]
+}

@@ -1,0 +1,306 @@
+[0.007s] Invoking command in '/home/fsrobo/master-slave-robohub/build/robo_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fsrobo/starai-arm-moveit2/install/viola_description:/home/fsrobo/starai-arm-moveit2/install/viola_controller:/home/fsrobo/starai-arm-moveit2/install/robo_driver:/home/fsrobo/starai-arm-moveit2/install/cello_description:/home/fsrobo/starai-arm-moveit2/install/cello_controller:/opt/ros/humble /usr/bin/cmake /home/fsrobo/master-slave-robohub/src/robo_interfaces -DCMAKE_INSTALL_PREFIX=/home/fsrobo/master-slave-robohub/install/robo_interfaces
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.114s] -- Detecting C compiler ABI info
+[0.174s] -- Detecting C compiler ABI info - done
+[0.181s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.181s] -- Detecting C compile features
+[0.182s] -- Detecting C compile features - done
+[0.184s] -- Detecting CXX compiler ABI info
+[0.254s] -- Detecting CXX compiler ABI info - done
+[0.259s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.259s] -- Detecting CXX compile features
+[0.260s] -- Detecting CXX compile features - done
+[0.261s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.377s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.446s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.499s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.502s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.507s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.535s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.697s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.839s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.019s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.038s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.040s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.059s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.059s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.060s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.060s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.075s] -- Found PythonExtra: .so  
+[1.099s] -- Added test 'lint_cmake' to check CMake code style
+[1.099s] -- Added test 'xmllint' to check XML markup files
+[1.102s] -- Configuring done
+[1.119s] -- Generating done
+[1.126s] -- Build files have been written to: /home/fsrobo/master-slave-robohub/build/robo_interfaces
+[1.130s] Invoked command in '/home/fsrobo/master-slave-robohub/build/robo_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fsrobo/starai-arm-moveit2/install/viola_description:/home/fsrobo/starai-arm-moveit2/install/viola_controller:/home/fsrobo/starai-arm-moveit2/install/robo_driver:/home/fsrobo/starai-arm-moveit2/install/cello_description:/home/fsrobo/starai-arm-moveit2/install/cello_controller:/opt/ros/humble /usr/bin/cmake /home/fsrobo/master-slave-robohub/src/robo_interfaces -DCMAKE_INSTALL_PREFIX=/home/fsrobo/master-slave-robohub/install/robo_interfaces
+[1.133s] Invoking command in '/home/fsrobo/master-slave-robohub/build/robo_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fsrobo/starai-arm-moveit2/install/viola_description:/home/fsrobo/starai-arm-moveit2/install/viola_controller:/home/fsrobo/starai-arm-moveit2/install/robo_driver:/home/fsrobo/starai-arm-moveit2/install/cello_description:/home/fsrobo/starai-arm-moveit2/install/cello_controller:/opt/ros/humble /usr/bin/cmake --build /home/fsrobo/master-slave-robohub/build/robo_interfaces -- -j16 -l16
+[1.165s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.175s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.182s] [  4%] Built target ament_cmake_python_copy_robo_interfaces
+[1.348s] running egg_info
+[1.349s] creating robo_interfaces.egg-info
+[1.349s] writing robo_interfaces.egg-info/PKG-INFO
+[1.349s] writing dependency_links to robo_interfaces.egg-info/dependency_links.txt
+[1.349s] writing top-level names to robo_interfaces.egg-info/top_level.txt
+[1.349s] writing manifest file 'robo_interfaces.egg-info/SOURCES.txt'
+[1.350s] reading manifest file 'robo_interfaces.egg-info/SOURCES.txt'
+[1.351s] writing manifest file 'robo_interfaces.egg-info/SOURCES.txt'
+[1.373s] [  4%] Built target ament_cmake_python_build_robo_interfaces_egg
+[1.457s] [  4%] Built target robo_interfaces__cpp
+[1.461s] [ 10%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_interfaces/srv/detail/write_data__functions.c.o[0m
+[1.461s] [ 10%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_interfaces/msg/detail/set_angle__functions.c.o[0m
+[1.461s] [ 10%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robo_interfaces/srv/detail/read_data__functions.c.o[0m
+[1.466s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.467s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.467s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.507s] [ 19%] [32m[1mLinking C shared library librobo_interfaces__rosidl_generator_c.so[0m
+[1.543s] [ 19%] Built target robo_interfaces__rosidl_generator_c
+[1.551s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.553s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.553s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.704s] [ 31%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_interfaces/msg/set_angle__type_support.cpp.o[0m
+[1.704s] [ 31%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_interfaces/srv/read_data__type_support.cpp.o[0m
+[1.704s] [ 31%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo_interfaces/srv/write_data__type_support.cpp.o[0m
+[1.752s] [ 34%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_interfaces/msg/detail/set_angle__type_support.cpp.o[0m
+[1.752s] [ 36%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_interfaces/srv/detail/read_data__type_support.cpp.o[0m
+[1.754s] [ 38%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo_interfaces/srv/detail/write_data__type_support.cpp.o[0m
+[1.766s] [ 40%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_interfaces/msg/detail/dds_fastrtps/set_angle__type_support.cpp.o[0m
+[1.766s] [ 44%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_interfaces/srv/detail/dds_fastrtps/write_data__type_support.cpp.o[0m
+[1.766s] [ 44%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo_interfaces/srv/detail/dds_fastrtps/read_data__type_support.cpp.o[0m
+[1.879s] [ 48%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_interfaces/msg/set_angle__type_support.cpp.o[0m
+[1.880s] [ 48%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_interfaces/srv/read_data__type_support.cpp.o[0m
+[1.880s] [ 51%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo_interfaces/srv/write_data__type_support.cpp.o[0m
+[1.922s] [ 53%] [32m[1mLinking CXX shared library librobo_interfaces__rosidl_typesupport_c.so[0m
+[1.949s] [ 59%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_interfaces/msg/detail/set_angle__type_support.c.o[0m
+[1.949s] [ 59%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_interfaces/srv/detail/write_data__type_support.c.o[0m
+[1.950s] [ 59%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo_interfaces/srv/detail/read_data__type_support.c.o[0m
+[2.003s] [ 59%] Built target robo_interfaces__rosidl_typesupport_c
+[2.010s] [ 61%] [32m[1mLinking C shared library librobo_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.056s] [ 61%] Built target robo_interfaces__rosidl_typesupport_introspection_c
+[2.080s] [ 63%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_interfaces/srv/detail/read_data__type_support_c.cpp.o[0m
+[2.080s] [ 68%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_interfaces/msg/detail/set_angle__type_support_c.cpp.o[0m
+[2.080s] [ 68%] [32mBuilding CXX object CMakeFiles/robo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo_interfaces/srv/detail/write_data__type_support_c.cpp.o[0m
+[2.098s] [ 70%] [32m[1mLinking CXX shared library librobo_interfaces__rosidl_typesupport_cpp.so[0m
+[2.146s] [ 70%] Built target robo_interfaces__rosidl_typesupport_cpp
+[2.363s] [ 72%] [32m[1mLinking CXX shared library librobo_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.431s] [ 72%] Built target robo_interfaces__rosidl_typesupport_introspection_cpp
+[2.447s] [ 74%] [32m[1mLinking CXX shared library librobo_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.470s] [ 76%] [32m[1mLinking CXX shared library librobo_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.508s] [ 76%] Built target robo_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.527s] [ 76%] Built target robo_interfaces__rosidl_typesupport_fastrtps_c
+[2.542s] [ 76%] Built target robo_interfaces
+[2.557s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.912s] [ 78%] Built target robo_interfaces__py
+[2.930s] [ 80%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robo_interfaces/srv/_write_data_s.c.o[0m
+[2.931s] [ 85%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robo_interfaces/srv/_read_data_s.c.o[0m
+[2.931s] [ 85%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robo_interfaces/msg/_set_angle_s.c.o[0m
+[3.013s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/robo_interfaces/librobo_interfaces__rosidl_generator_py.so[0m
+[3.045s] [ 87%] Built target robo_interfaces__rosidl_generator_py
+[3.062s] [ 89%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robo_interfaces/_robo_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.063s] [ 91%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robo_interfaces/_robo_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.064s] [ 93%] [32mBuilding C object CMakeFiles/robo_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robo_interfaces/_robo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.134s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/robo_interfaces/robo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.135s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/robo_interfaces/robo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.140s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robo_interfaces/robo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.161s] [100%] Built target robo_interfaces__rosidl_typesupport_c__pyext
+[3.162s] [100%] Built target robo_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.169s] [100%] Built target robo_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.178s] Invoked command in '/home/fsrobo/master-slave-robohub/build/robo_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fsrobo/starai-arm-moveit2/install/viola_description:/home/fsrobo/starai-arm-moveit2/install/viola_controller:/home/fsrobo/starai-arm-moveit2/install/robo_driver:/home/fsrobo/starai-arm-moveit2/install/cello_description:/home/fsrobo/starai-arm-moveit2/install/cello_controller:/opt/ros/humble /usr/bin/cmake --build /home/fsrobo/master-slave-robohub/build/robo_interfaces -- -j16 -l16
+[3.187s] Invoking command in '/home/fsrobo/master-slave-robohub/build/robo_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fsrobo/starai-arm-moveit2/install/viola_description:/home/fsrobo/starai-arm-moveit2/install/viola_controller:/home/fsrobo/starai-arm-moveit2/install/robo_driver:/home/fsrobo/starai-arm-moveit2/install/cello_description:/home/fsrobo/starai-arm-moveit2/install/cello_controller:/opt/ros/humble /usr/bin/cmake --install /home/fsrobo/master-slave-robohub/build/robo_interfaces
+[3.193s] -- Install configuration: ""
+[3.193s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/ament_index/resource_index/rosidl_interfaces/robo_interfaces
+[3.193s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces
+[3.193s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv
+[3.193s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/read_data.h
+[3.193s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/write_data.h
+[3.193s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__struct.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__functions.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__functions.c
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__functions.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__struct.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__type_support.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__functions.c
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__type_support.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/set_angle.h
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__functions.c
+[3.194s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__type_support.h
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__functions.h
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__struct.h
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/library_path.sh
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/library_path.dsv
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_generator_c.so
+[3.195s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_generator_c.so" to ""
+[3.195s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces
+[3.195s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv
+[3.195s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__rosidl_typesupport_fastrtps_c.h
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__rosidl_typesupport_fastrtps_c.h
+[3.195s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg
+[3.195s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.195s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__rosidl_typesupport_fastrtps_c.h
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.196s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.196s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces
+[3.196s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv
+[3.196s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__rosidl_typesupport_introspection_c.h
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__type_support.c
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__type_support.c
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__rosidl_typesupport_introspection_c.h
+[3.196s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.196s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail
+[3.196s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__type_support.c
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__rosidl_typesupport_introspection_c.h
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_introspection_c.so
+[3.197s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_c.so
+[3.197s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_c.so" to ""
+[3.197s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces
+[3.197s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/write_data.hpp
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/read_data.hpp
+[3.197s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__struct.hpp
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__builder.hpp
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__traits.hpp
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__type_support.hpp
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__type_support.hpp
+[3.197s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__builder.hpp
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__struct.hpp
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__traits.hpp
+[3.198s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/set_angle.hpp
+[3.198s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__type_support.hpp
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__struct.hpp
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__builder.hpp
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__traits.hpp
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.198s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces
+[3.198s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv
+[3.198s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail
+[3.198s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/dds_fastrtps
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__rosidl_typesupport_fastrtps_cpp.hpp
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__rosidl_typesupport_fastrtps_cpp.hpp
+[3.199s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.199s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/dds_fastrtps
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__rosidl_typesupport_fastrtps_cpp.hpp
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.199s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.199s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces
+[3.199s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv
+[3.199s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__type_support.cpp
+[3.199s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__rosidl_typesupport_introspection_cpp.hpp
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/write_data__rosidl_typesupport_introspection_cpp.hpp
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/srv/detail/read_data__type_support.cpp
+[3.200s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg
+[3.200s] -- Up-to-date: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__type_support.cpp
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/include/robo_interfaces/robo_interfaces/msg/detail/set_angle__rosidl_typesupport_introspection_cpp.hpp
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.200s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_cpp.so
+[3.200s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/pythonpath.sh
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/pythonpath.dsv
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces-0.0.0-py3.10.egg-info
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/librobo_interfaces__rosidl_generator_py.so
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/_robo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/__init__.py
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/_write_data_s.c
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/_read_data.py
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/_read_data_s.c
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/_write_data.py
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/__init__.py
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/_robo_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/_robo_interfaces_s.ep.rosidl_typesupport_c.c
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/msg
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/msg/_set_angle_s.c
+[3.200s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/msg/__init__.py
+[3.201s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/msg/_set_angle.py
+[3.226s] Listing '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces'...
+[3.226s] Compiling '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/__init__.py'...
+[3.226s] Listing '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/msg'...
+[3.226s] Compiling '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/msg/__init__.py'...
+[3.226s] Compiling '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/msg/_set_angle.py'...
+[3.226s] Listing '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv'...
+[3.226s] Compiling '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/__init__.py'...
+[3.226s] Compiling '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/_read_data.py'...
+[3.226s] Compiling '/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/srv/_write_data.py'...
+[3.230s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.230s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.230s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.230s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.230s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.230s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages/robo_interfaces/robo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.230s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_generator_py.so
+[3.230s] -- Set runtime path of "/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib/librobo_interfaces__rosidl_generator_py.so" to ""
+[3.230s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/ReadData.idl
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/WriteData.idl
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/msg/SetAngle.idl
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/ReadData.srv
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/ReadData_Request.msg
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/ReadData_Response.msg
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/WriteData.srv
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/WriteData_Request.msg
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/srv/WriteData_Response.msg
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/msg/SetAngle.msg
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/ament_index/resource_index/package_run_dependencies/robo_interfaces
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/ament_index/resource_index/parent_prefix_path/robo_interfaces
+[3.231s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/ament_prefix_path.sh
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/ament_prefix_path.dsv
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/path.sh
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/environment/path.dsv
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/local_setup.bash
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/local_setup.sh
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/local_setup.zsh
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/local_setup.dsv
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/package.dsv
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/ament_index/resource_index/packages/robo_interfaces
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_generator_cExport.cmake
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.232s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_cExport.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_generator_cppExport.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_cppExport.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_generator_pyExport.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/export_robo_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.233s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.234s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.234s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.234s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.234s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.234s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfacesConfig.cmake
+[3.234s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/cmake/robo_interfacesConfig-version.cmake
+[3.234s] -- Installing: /home/fsrobo/master-slave-robohub/install/robo_interfaces/share/robo_interfaces/package.xml
+[3.235s] Invoked command in '/home/fsrobo/master-slave-robohub/build/robo_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fsrobo/starai-arm-moveit2/install/viola_description:/home/fsrobo/starai-arm-moveit2/install/viola_controller:/home/fsrobo/starai-arm-moveit2/install/robo_driver:/home/fsrobo/starai-arm-moveit2/install/cello_description:/home/fsrobo/starai-arm-moveit2/install/cello_controller:/opt/ros/humble /usr/bin/cmake --install /home/fsrobo/master-slave-robohub/build/robo_interfaces

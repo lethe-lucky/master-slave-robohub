@@ -1,0 +1,37 @@
+[0.538s] Invoking command in '/home/fsrobo/master-slave-robohub/src/robo_follower': AMENT_PREFIX_PATH=/home/fsrobo/master-slave-robohub/install/robo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fsrobo/master-slave-robohub/install/robo_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fsrobo/master-slave-robohub/build/robo_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages:/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robo_follower build --build-base /home/fsrobo/master-slave-robohub/build/robo_follower/build install --record /home/fsrobo/master-slave-robohub/build/robo_follower/install.log --single-version-externally-managed install_data
+[0.677s] running egg_info
+[0.677s] creating ../../build/robo_follower/robo_follower.egg-info
+[0.677s] writing ../../build/robo_follower/robo_follower.egg-info/PKG-INFO
+[0.677s] writing dependency_links to ../../build/robo_follower/robo_follower.egg-info/dependency_links.txt
+[0.677s] writing entry points to ../../build/robo_follower/robo_follower.egg-info/entry_points.txt
+[0.677s] writing requirements to ../../build/robo_follower/robo_follower.egg-info/requires.txt
+[0.678s] writing top-level names to ../../build/robo_follower/robo_follower.egg-info/top_level.txt
+[0.678s] writing manifest file '../../build/robo_follower/robo_follower.egg-info/SOURCES.txt'
+[0.679s] reading manifest file '../../build/robo_follower/robo_follower.egg-info/SOURCES.txt'
+[0.679s] writing manifest file '../../build/robo_follower/robo_follower.egg-info/SOURCES.txt'
+[0.679s] running build
+[0.679s] running build_py
+[0.679s] creating /home/fsrobo/master-slave-robohub/build/robo_follower/build
+[0.679s] creating /home/fsrobo/master-slave-robohub/build/robo_follower/build/lib
+[0.680s] creating /home/fsrobo/master-slave-robohub/build/robo_follower/build/lib/robo_follower
+[0.680s] copying robo_follower/robo_follower.py -> /home/fsrobo/master-slave-robohub/build/robo_follower/build/lib/robo_follower
+[0.680s] copying robo_follower/__init__.py -> /home/fsrobo/master-slave-robohub/build/robo_follower/build/lib/robo_follower
+[0.680s] running install
+[0.680s] running install_lib
+[0.680s] creating /home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages/robo_follower
+[0.680s] copying /home/fsrobo/master-slave-robohub/build/robo_follower/build/lib/robo_follower/robo_follower.py -> /home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages/robo_follower
+[0.680s] copying /home/fsrobo/master-slave-robohub/build/robo_follower/build/lib/robo_follower/__init__.py -> /home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages/robo_follower
+[0.681s] byte-compiling /home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages/robo_follower/robo_follower.py to robo_follower.cpython-310.pyc
+[0.682s] byte-compiling /home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages/robo_follower/__init__.py to __init__.cpython-310.pyc
+[0.682s] running install_data
+[0.682s] creating /home/fsrobo/master-slave-robohub/install/robo_follower/share/ament_index
+[0.682s] creating /home/fsrobo/master-slave-robohub/install/robo_follower/share/ament_index/resource_index
+[0.682s] creating /home/fsrobo/master-slave-robohub/install/robo_follower/share/ament_index/resource_index/packages
+[0.682s] copying resource/robo_follower -> /home/fsrobo/master-slave-robohub/install/robo_follower/share/ament_index/resource_index/packages
+[0.682s] copying package.xml -> /home/fsrobo/master-slave-robohub/install/robo_follower/share/robo_follower
+[0.682s] running install_egg_info
+[0.683s] Copying ../../build/robo_follower/robo_follower.egg-info to /home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages/robo_follower-0.0.0-py3.10.egg-info
+[0.684s] running install_scripts
+[0.699s] Installing follower script to /home/fsrobo/master-slave-robohub/install/robo_follower/lib/robo_follower
+[0.699s] writing list of installed files to '/home/fsrobo/master-slave-robohub/build/robo_follower/install.log'
+[0.722s] Invoked command in '/home/fsrobo/master-slave-robohub/src/robo_follower' returned '0': AMENT_PREFIX_PATH=/home/fsrobo/master-slave-robohub/install/robo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fsrobo/master-slave-robohub/install/robo_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fsrobo/master-slave-robohub/install/robo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fsrobo/master-slave-robohub/build/robo_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fsrobo/master-slave-robohub/install/robo_follower/lib/python3.10/site-packages:/home/fsrobo/master-slave-robohub/install/robo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robo_follower build --build-base /home/fsrobo/master-slave-robohub/build/robo_follower/build install --record /home/fsrobo/master-slave-robohub/build/robo_follower/install.log --single-version-externally-managed install_data

@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+../../build/robo_leader/robo_leader.egg-info/PKG-INFO
+../../build/robo_leader/robo_leader.egg-info/SOURCES.txt
+../../build/robo_leader/robo_leader.egg-info/dependency_links.txt
+../../build/robo_leader/robo_leader.egg-info/entry_points.txt
+../../build/robo_leader/robo_leader.egg-info/requires.txt
+../../build/robo_leader/robo_leader.egg-info/top_level.txt
+../../build/robo_leader/robo_leader.egg-info/zip-safe
+resource/robo_leader
+robo_leader/__init__.py
+robo_leader/robo_leader.py
