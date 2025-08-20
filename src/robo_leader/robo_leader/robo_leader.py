@@ -7,7 +7,7 @@ Leader node - Sends control commands to follower node
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
-from robo_interfaces.msg import SetAngle
+from robo_hubinterfaces.msg import SetAngleServo
 import math
 import time
 import fashionstar_uart_sdk as uservo
@@ -43,9 +43,9 @@ class LeaderArm(Node):
         # 初始化节点
         super().__init__(node_name)
         
-        # 发布舵机角度设定话题 / Publisher for SetAngle messages
+        # 发布舵机角度设定话题 / Publisher for SetAngleServo messages
         self.angle_publishers = self.create_publisher(
-            SetAngle,                                               
+            SetAngleServo,                                               
             self.topic_name,
             1)
         
@@ -93,8 +93,8 @@ class LeaderArm(Node):
         super().destroy_node()
 
     def fsrobo_a1_leader_angle_publish(self):
-        # 构造 SetAngle 消息 / build SetAngle msg
-        leader_msg = SetAngle()
+        # 构造 SetAngleServo 消息 / build SetAngleServo msg
+        leader_msg = SetAngleServo()
         self.uservo.send_sync_servo_monitor(self.servo_ids)
         
         # 初始化数组

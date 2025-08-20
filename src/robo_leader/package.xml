@@ -9,7 +9,7 @@
 
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
-  <depend>robo_interfaces</depend>
+  <depend>robo_hubinterfaces</depend>
   <depend>std_msgs</depend>
 
   <test_depend>ament_copyright</test_depend>

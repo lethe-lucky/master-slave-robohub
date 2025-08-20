@@ -7,7 +7,7 @@ Follower node - Receives control commands from leader node and controls the robo
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
-from robo_interfaces.msg import SetAngle
+from robo_hubinterfaces.msg import SetAngleServo
 import math
 import time
 import fashionstar_uart_sdk as uservo
@@ -68,7 +68,7 @@ class FollowerArm(Node):
         
         # 订阅主控节点的角度设定话题 / Subscribe to leader node angle topic
         self.angle_subscription = self.create_subscription(
-            SetAngle,
+            SetAngleServo,
             self.topic_name,
             self.set_angle_callback,
             10)

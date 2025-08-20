@@ -23,7 +23,7 @@ master-slave-robohub/
 │   │   └── config_loader.py   # 配置加载模块
 │   ├── robo_leader/           # 主控节点包
 │   ├── robo_follower/         # 从控节点包
-│   └── robo_interfaces/       # 接口定义包
+│   └── robo_hubinterfaces/       # 接口定义包
 └── README.md                  # 项目说明文档
 ```
 
